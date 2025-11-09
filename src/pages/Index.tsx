@@ -22,9 +22,11 @@ const Index = () => {
               Track every topic, build study streaks, and achieve your goals with our beautiful, gamified preparation tracker.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8 bg-gradient-primary border-0 shadow-medium hover:shadow-strong transition-all">
-                Get Started Free
-              </Button>
+              <Link to="/auth">
+                <Button size="lg" className="text-lg px-8 bg-gradient-primary border-0 shadow-medium hover:shadow-strong transition-all">
+                  Get Started Free
+                </Button>
+              </Link>
               <Button size="lg" variant="outline" className="text-lg px-8 border-2">
                 See How It Works
               </Button>
@@ -108,9 +110,11 @@ const Index = () => {
               <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
                 Join students who are crushing their exam prep with systematic tracking and gamified motivation.
               </p>
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8 shadow-medium">
-                Start Your Journey
-              </Button>
+              <Link to="/auth">
+                <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8 shadow-medium">
+                  Start Your Journey
+                </Button>
+              </Link>
             </CardContent>
           </Card>
         </div>
