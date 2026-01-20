@@ -46,7 +46,22 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      match_questions: {
+        Args: {
+          match_count?: number
+          match_threshold?: number
+          query_embedding: string
+        }
+        Returns: {
+          answer: string
+          difficulty: string
+          id: string
+          question_text: string
+          similarity: number
+          subtopic: string
+          topic: string
+        }[]
+      }
     }
     Enums: {
       [_ in never]: never
