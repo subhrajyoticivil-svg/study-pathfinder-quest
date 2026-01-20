@@ -41,6 +41,45 @@ export type Database = {
         }
         Relationships: []
       }
+      questions: {
+        Row: {
+          answer: string | null
+          created_at: string
+          created_by: string | null
+          difficulty: string | null
+          embedding: string
+          id: string
+          question_text: string
+          subtopic: string | null
+          topic: string | null
+          updated_at: string
+        }
+        Insert: {
+          answer?: string | null
+          created_at?: string
+          created_by?: string | null
+          difficulty?: string | null
+          embedding: string
+          id?: string
+          question_text: string
+          subtopic?: string | null
+          topic?: string | null
+          updated_at?: string
+        }
+        Update: {
+          answer?: string | null
+          created_at?: string
+          created_by?: string | null
+          difficulty?: string | null
+          embedding?: string
+          id?: string
+          question_text?: string
+          subtopic?: string | null
+          topic?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
